@@ -35,8 +35,41 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 botonVaciar.addEventListener('click', () => {
-    carrito.length = 0
-    actualizarCarrito()
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-success',
+          cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+      })
+      
+      swalWithBootstrapButtons.fire({
+        title: 'Estas Seguro?',
+        text: "No Podras Recuperar La Compra Luego",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Elimina!',
+        cancelButtonText: 'Cancela!',
+        reverseButtons: true
+      }).then((result) => {
+        if (result.isConfirmed) {
+          swalWithBootstrapButtons.fire(
+            'Borrado!',
+            'Tu Compra Fue Borrada!',
+            'success'
+          )
+            carrito.length = 0
+        actualizarCarrito()
+        } else if (
+          result.dismiss === Swal.DismissReason.cancel
+        ) {
+          swalWithBootstrapButtons.fire(
+            'Cancelado',
+            'Tu Compra Esta A Salvo :)',
+            'error'
+          )
+        }
+      })
 })
 
 Album.forEach((producto) => {
@@ -81,11 +114,22 @@ const agregarAlCarrito = (prodId) =>{
         carrito.push(item)
     }
     actualizarCarrito()
-    const item = Album.find((prod) => prod.id === prodId)
-    carrito.push(item)
-    actualizarCarrito()
-    console.log(carrito)
-
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-start',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: false,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Agregado Al Carrito Exitosamente'
+      })
 }
 
 const eliminarDelCarrito = (prodId) => {
@@ -93,7 +137,6 @@ const eliminarDelCarrito = (prodId) => {
     const indice = carrito.indexOf(item)
     carrito.splice(indice, 1)
     actualizarCarrito()
-    console.log(carrito)
 }
 
 const actualizarCarrito = () => {
