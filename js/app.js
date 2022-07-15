@@ -18,7 +18,18 @@ const Album = [
     {nombre: 'O!RUL8,2?', precio: 6000, img: './images/ORL82.jpg', id: 17, cantidad: 1},
     {nombre: '2COOL4SKOOL', precio: 6000, img: './images/2c4s.jpg', id: 18, cantidad: 1},
 ];
-
+document.addEventListener('DOMContentLoaded', () => {
+    fetchData()
+})
+const fetchData = async () => {
+  try {
+    const res = await fetch('./js/data.json')
+    const data = await res.json()
+    console.log(data)
+  } catch (error) {
+    console.log(error)
+  }
+}
 const contenedoralbumnes = document.getElementById('contenedor-productos')
 const contenedorCarrito = document.getElementById('carrito-contenedor')
 const botonVaciar = document.getElementById('vaciar-carrito')
