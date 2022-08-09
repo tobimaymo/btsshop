@@ -1,43 +1,42 @@
 [
     {
         "nombre": "Proof",
-        "precio": 6000, 
+        "precio": 9000, 
         "img": "./images/proof.png", 
         "id": 1, 
-        "cantidad": 1,
-        "tracklist": "Born Singer, No More Dream, N.O, Boy In Luv, Danger, I Need U, RUN, Burning Up (FIRE), Blood Sweat & Tears, Spring Day, DNA, FAKE LOVE, IDOL, Boy With Luv (Feat. Halsey), ON, Dynamite, Life Goes On, Butter, Yet To Come, Run BTS, Intro: Persona, Stay, Moon, Jamais Vu, Trivia: Seesaw, BTS Cypher PT.3: KILLER, Outro: Ego, Her, Filter, Friends, Singularity, 00:00 (Zero O´Clock), Euphoria, Dimple, For Youth"
+        "cantidad": 1
     },
     {
         "nombre": "Butter",
-        "precio": 6000,
+        "precio": 8500,
         "img": "./images/butter.jpg",
         "id": 2, 
         "cantidad": 1
     },
     {
         "nombre": "BE", 
-        "precio": 6000, 
+        "precio": 8000, 
         "img": "./images/be.jpg", 
         "id": 3, 
         "cantidad": 1
     },
     {
         "nombre": "Dynamite", 
-        "precio": 6000, 
+        "precio": 2000, 
         "img": "./images/dynamite.jpg", 
         "id": 4, 
         "cantidad": 1
     },
     {
         "nombre": "Map Of The Soul: 7", 
-        "precio": 6000, 
+        "precio": 7000, 
         "img": "./images/mots7.jpg", 
         "id": 5, 
         "cantidad": 1
     },
     {
         "nombre": "Map Of The Soul: Persona", 
-        "precio": 6000, 
+        "precio": 7000, 
         "img": "./images/motsp.jpg", 
         "id": 6, 
         "cantidad": 1
@@ -65,63 +64,63 @@
     },
     {
         "nombre": "You Never Walk Alone", 
-        "precio": 6000, 
+        "precio": 5000, 
         "img": "./images/ynwa.jpg", 
         "id": 10, 
         "cantidad": 1
     },
     {
         "nombre": "Wings", 
-        "precio": 6000, 
+        "precio": 5000, 
         "img": "./images/wings.jpg", 
         "id": 11, 
         "cantidad": 1
     },
     {
         "nombre": "The Most Beautiful Moments In Life: Young Forever", 
-        "precio": 6000, 
+        "precio": 4000, 
         "img": "./images/tmbmilptyf.jpg", 
         "id": 12, 
         "cantidad": 1
     },
     {
         "nombre": "The Most Beautiful Moments In Life PT.2", 
-        "precio": 6000, 
+        "precio": 4000, 
         "img": "./images/tmbmilpt2.jpg", 
         "id": 13, 
         "cantidad": 1
     },
     {
         "nombre": "The Most Beautiful Moments In Life PT. 1", 
-        "precio": 6000, 
+        "precio": 4000, 
         "img": "./images/tmbmilpt1.jpg", 
         "id": 14, 
         "cantidad": 1
     },
     {
         "nombre": "Dark&Wild", 
-        "precio": 6000, 
+        "precio": 3500, 
         "img": "./images/d&w.jpg", 
         "id": 15, 
         "cantidad": 1
     },
     {
         "nombre": "Skool Luv Affair", 
-        "precio": 6000, 
+        "precio": 3500, 
         "img": "./images/ska.jpg", 
         "id": 16, 
         "cantidad": 1
     },
     {
         "nombre": "O!RUL8,2?", 
-        "precio": 6000, 
+        "precio": 3500, 
         "img": "./images/ORL82.jpg", 
         "id": 17, 
         "cantidad": 1
     },
     {
         "nombre": "2COOL4SKOOL", 
-        "precio": 6000, 
+        "precio": 3500, 
         "img": "./images/2c4s.jpg", 
         "id": 18, 
         "cantidad": 1
